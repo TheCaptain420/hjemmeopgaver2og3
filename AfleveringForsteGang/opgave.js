@@ -88,3 +88,57 @@ function opgave6(ord,bogstav){
     console.log("we done ="+counter);
 
 }
+
+
+
+//04- The sum of a range
+function opgave7(start, end){
+    var arrayen = [];
+    while(start<end){
+        arrayen.push(start);
+        start++;
+    }
+    arrayen.push(start);
+    return arrayen;
+    
+}
+function opgave7del2(enArray){
+    let sum=0;
+    for(let i = 0; i<enArray.length;i++){
+        sum+=enArray[i]; 
+    }
+    return sum;
+}
+
+//04 - Reversing an array
+function reverseArray(arrayene){
+    let newArray=[];
+    for (let index = 0; index < arrayene.length; index++) {
+        newArray[index]=(arrayene[arrayene.length-index-1]);
+    }
+    console.log(newArray);
+}
+
+//nemt lol
+function reverseArrayInPlace(arrayen){
+    let stopannoyingme = arrayen.length-1;
+    for (let index = 0; index < (stopannoyingme/2); index++) {
+        let a = arrayen[index];
+        let b = arrayen[stopannoyingme-index];
+        
+        arrayen[index]= b;
+        arrayen[stopannoyingme-index] = a;
+    }
+    console.log(arrayen)
+}
+
+//RESTEN AF DE STILLEDE OPGAVER ER NOGET VÆRE LORT(HAN FORKLARER TING DÅRLIGT).
+//HÅBER IKKE VI SKAL BRUGE BOGEN TIL MERE, DEN SUTTER EN DEL.
+
+//Laver nogle javascript opgaver andre steder fra, med samme emner.
+//Blandt andet fra W3 schools.
+
+
+
+
+
